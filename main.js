@@ -16,12 +16,13 @@ for (let i = 1; i <= 10; i++) {
     //creo un list item
     const list = document.createElement('li');
 
-    //aggiungo le mail generate nel list item
-    list.innerText = emailEl;
-
     //aggiungo il list item nell'ul
     mailContainerEl.appendChild(list);
 
+    //aggiungo le mail generate nel list item
+    list.innerText = emailEl;
+
+    
 });
     
 }
