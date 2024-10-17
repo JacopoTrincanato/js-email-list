@@ -19,16 +19,29 @@ h1{
 
 main, header{
     border: 1px solid gray;
-}
-ul{
-    list-style: none;
-    line-height: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+ul{
+    list-style: none;
+    line-height: 2rem;
+    
+}
+
 .d-none{
     display: none;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    
+    
 }
