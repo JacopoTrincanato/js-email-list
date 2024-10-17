@@ -9,10 +9,15 @@ for (let i = 1; i <= 10; i++) {
     .then(response =>{
     console.log(response);
     
-    let emailEl =  response.data.response //document.createElement('li');
+    //creo una mail randomica
+    let emailEl =  response.data.response 
     console.log(emailEl);
     
-  
+    //creo un list item
+    const list = document.createElement('li');
+
+    //aggiungo il list item nell'ul
+    mailContainerEl.appendChild(list);
 
 });
     
