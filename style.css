@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-.container{
-    width: 800px;
-    margin: auto;
+.container, h1, ul{
     padding: 2rem;
 }
 
+.container{
+    width: 800px;
+    margin: auto;
+}
 
 h1{
     text-align: center;
