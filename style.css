@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 800px;
+    margin: auto;
+    padding: 2rem;
+}
+
+
+h1{
+    text-align: center;
+}
+
+main, header{
+    border: 1px solid gray;
+}
+ul{
+    list-style: none;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
