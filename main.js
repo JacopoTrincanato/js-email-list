@@ -3,6 +3,8 @@
 //richiamo l'elemento della DOM in cui voglio inserire le mail e lo salvo in una costante
 const mailContainerEl = document.querySelector('ul');
 
+const buttonEl = document.querySelector('button');
+
 //creo un ciclo che mi permetta di generare dieci mail
 for (let i = 1; i <= 10; i++) {
     axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
@@ -22,10 +24,29 @@ for (let i = 1; i <= 10; i++) {
     //aggiungo le mail generate nel list item
     list.innerText = emailEl;
 
+    buttonEl.addEventListener('click', function(){
+        emailEl.classList.add("d-none");
+    
+        axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
+        .then(response =>{
+        console.log(response);
+        
+        //creo un'altra serie di mail randomiche
+        let newEmailEl =  response.data.response 
+        console.log(newEmailEl);
+
+        //aggiungo le mail generate nel list item
+        list.innerText = newEmailEl;
+        });
+    })
     
 });
     
 }
+
+
+
+
 
 
 
